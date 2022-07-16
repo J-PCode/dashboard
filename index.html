@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboad grid project</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Italiana&display=swap');
+        </style>
 </head>
 <body>
     <div class="grid-container">
         <div class="header">
-            <div class="header-top">
+            <div class="search">
                 <input type="text" placeholder="search">
+            </div>
+            <div class="user-menus">
                 <a href="">
                     <strong>J-PCode</strong>
                     <span> <img icon="account" src="/assets/account.png" alt="Account menu"></span>
@@ -19,11 +24,46 @@
                 <a href="">
                     <span><img icon="account" src="/assets/cog.png" alt="Settings menu"></span>
                 </a>
+            </div>
+            <div class="avatar">
+                   <img class="image" icon="avatar" src="/assets/Open Peeps - Avatar and Backdrop.png" alt="">
+                <p>Welcome J-PCode
+                </p>
 
             </div>
+                <div class="buttons">
+                    <button>Exercise</button>
+                    <button>Meditate</button>
+                    <button>Study</button>
+                </div>
         </div>
-        <div class="sidebar"></div>
-        <div class="main"></div>
+        <div class="sidebar">
+            <a id="logo" href="." rel="home"><img src="/assets/bike.png" alt="Dashboard Logo"> DASHBOARD</a>
+            <nav>
+                <ul>
+                    <li><a href=""><img src="/assets/home.png" alt="" >Home</a></li>
+                    <li><a href=""><img src="/assets/calendar.png" alt="" >Diary</a></li>
+                    <li><a href=""><img src="/assets/chart-bar.png" alt="" >Reports</a></li>
+                    <li><a href=""><img src="/assets/account-multiple.png" alt="" >Community</a></li>
+                    <li><a href=""><img src="/assets/calendar-multiselect-outline.png" alt="" >Programs</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href=""><img src="/assets/cog white.png" alt="" >Settings</a></li>
+                    <li><a href=""><img src="/assets/logout.png" alt="" >Log Out</a></li>
+                </ul>
+            </nav>
+            <p>This project is part of Odin Project</p>
+        </div>
+            <div class="main">
+                <img class="june-training" src="/assets/calendar-june.png" alt="June training">
+                <div>
+                    <h3>Cardio load levels</h3>
+                    <p>Cardio load levels indicate how hard a training session was compared to your session average from the past 90 days.</p>
+                </div>
+                <img class="progress" src="/assets/progress.png" alt="Status">
+            </div>
     </div>
     
 </body>
